@@ -1,6 +1,6 @@
-/* GameFrame class establishes the frame (window) for the game
+package src;/* src.GameFrame class establishes the frame (window) for the game
 It is a child of JFrame because JFrame manages frames
-Runs the constructor in GamePanel class
+Runs the constructor in src.GamePanel class
 
 */
 import java.awt.*;
@@ -11,7 +11,7 @@ public class GameFrame extends JFrame{
     GamePanel panel;
 
     public GameFrame(){
-        panel = new GamePanel(); //run GamePanel constructor
+        panel = new GamePanel(); //run src.GamePanel constructor
         this.add(panel);
         this.setTitle("GUI is cool!"); //set title for frame
         this.setResizable(false); //frame can't change size

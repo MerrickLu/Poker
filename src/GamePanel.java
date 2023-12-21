@@ -1,4 +1,4 @@
-/* GamePanel class acts as the main "game loop" - continuously runs the game and calls whatever needs to be called
+package src;/* src.GamePanel class acts as the main "game loop" - continuously runs the game and calls whatever needs to be called
 
 Child of JPanel because JPanel contains methods for drawing to the screen
 
@@ -104,12 +104,12 @@ public class GamePanel extends JPanel implements Runnable, KeyListener{
         }
     }
 
-    //if a key is pressed, we'll send it over to the PlayerBall class for processing
+    //if a key is pressed, we'll send it over to the src.PlayerBall class for processing
     public void keyPressed(KeyEvent e){
         ball.keyPressed(e);
     }
 
-    //if a key is released, we'll send it over to the PlayerBall class for processing
+    //if a key is released, we'll send it over to the src.PlayerBall class for processing
     public void keyReleased(KeyEvent e){
         ball.keyReleased(e);
     }
